@@ -23,34 +23,40 @@
 
         <!-- Navigasi Menu -->
         <nav class="space-y-1">
-            <a href="#"
-                class="flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-xl bg-blue-50 text-blue-600 transition-all">
+            <a href="{{ route('kkn.dashboard') }}"
+                class="flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-xl transition-all {{ request()->routeIs('kkn.dashboard') ? 'bg-blue-50 text-blue-600' : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900' }}">
                 <i class="fa-solid fa-chart-pie w-5 text-center text-base"></i> Dashboard
             </a>
-            <a href="#"
-                class="flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-xl text-slate-500 hover:bg-slate-50 hover:text-slate-900 transition-all">
+
+            <a href="{{ route('kkn.jadwal') }}"
+                class="flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-xl transition-all {{ request()->routeIs('kkn.jadwal') ? 'bg-blue-50 text-blue-600' : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900' }}">
                 <i class="fa-solid fa-calendar-days w-5 text-center text-base"></i> Jadwal Kegiatan
             </a>
+
             <a href="#"
-                class="flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-xl text-slate-500 hover:bg-slate-50 hover:text-slate-900 transition-all">
+                class="flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-xl transition-all {{ request()->routeIs('kkn.piket') ? 'bg-blue-50 text-blue-600' : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900' }}">
                 <i class="fa-solid fa-clipboard-user w-5 text-center text-base"></i> Piket Harian
             </a>
+
             <a href="#"
-                class="flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-xl text-slate-500 hover:bg-slate-50 hover:text-slate-900 transition-all">
+                class="flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-xl transition-all {{ request()->routeIs('kkn.pengumuman') ? 'bg-blue-50 text-blue-600' : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900' }}">
                 <i class="fa-solid fa-bullhorn w-5 text-center text-base"></i> Pengumuman
                 <span class="ml-auto bg-amber-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">2
                     Baru</span>
             </a>
+
             <a href="#"
-                class="flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-xl text-slate-500 hover:bg-slate-50 hover:text-slate-900 transition-all">
+                class="flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-xl transition-all {{ request()->routeIs('kkn.absensi') ? 'bg-blue-50 text-blue-600' : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900' }}">
                 <i class="fa-solid fa-user-check w-5 text-center text-base"></i> Absensi
             </a>
+
             <a href="#"
-                class="flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-xl text-slate-500 hover:bg-slate-50 hover:text-slate-900 transition-all">
+                class="flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-xl transition-all {{ request()->routeIs('kkn.proker') ? 'bg-blue-50 text-blue-600' : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900' }}">
                 <i class="fa-solid fa-list-check w-5 text-center text-base"></i> Program Kerja
             </a>
+
             <a href="#"
-                class="flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-xl text-slate-500 hover:bg-slate-50 hover:text-slate-900 transition-all">
+                class="flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-xl transition-all {{ request()->routeIs('kkn.dokumentasi') ? 'bg-blue-50 text-blue-600' : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900' }}">
                 <i class="fa-solid fa-images w-5 text-center text-base"></i> Dokumentasi
             </a>
             <div class="pt-4 mt-4 border-t border-slate-100 space-y-1">
