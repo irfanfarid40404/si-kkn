@@ -70,6 +70,19 @@
                 </a>
             </div>
         </nav>
+
+    </div>
+
+    <div class="p-4 border-t border-slate-100 bg-slate-50/50">
+        <form action="{{ route('logout') }}" method="POST">
+            @csrf
+            <button type="submit"
+                class="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-xl text-rose-600 hover:bg-rose-50 hover:text-rose-700 transition-all text-left group">
+                <i
+                    class="fa-solid fa-right-from-bracket w-5 text-center text-base text-rose-500 group-hover:animate-pulse"></i>
+                <span>Keluar Aplikasi</span>
+            </button>
+        </form>
     </div>
 
     <!-- Dark Mode Toggle Particle -->
