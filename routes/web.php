@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PiketController;
 
 
 // =======================================================
@@ -39,4 +40,7 @@ Route::middleware('auth')->group(function () {
     
     // Proses Keluar Sistem (Logout)
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+    // Route untuk Halaman Piket Harian
+    Route::get('/piket', [PiketController::class, 'index'])->name('kkn.piket');
 });

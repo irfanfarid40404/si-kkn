@@ -33,7 +33,7 @@
                 <i class="fa-solid fa-calendar-days w-5 text-center text-base"></i> Jadwal Kegiatan
             </a>
 
-            <a href="#"
+            <a href="{{ route('kkn.piket') }}"
                 class="flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-xl transition-all {{ request()->routeIs('kkn.piket') ? 'bg-blue-50 text-blue-600' : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900' }}">
                 <i class="fa-solid fa-clipboard-user w-5 text-center text-base"></i> Piket Harian
             </a>
